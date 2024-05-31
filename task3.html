@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fitness Tracker</h1>
+        
+        <div class="form-container">
+            <h2>Add Activity</h2>
+            <form id="activityForm">
+                <label for="activityType">Activity Type:</label>
+                <input type="text" id="activityType" required>
+                <br>
+                <label for="duration">Duration (minutes):</label>
+                <input type="number" id="duration" required>
+                <br>
+                <label for="caloriesBurned">Calories Burned:</label>
+                <input type="number" id="caloriesBurned" required>
+                <br>
+                <button type="submit">Add Activity</button>
+            </form>
+        </div>
+
+        <div class="goal-container">
+            <h2>Set Fitness Goal</h2>
+            <form id="goalForm">
+                <label for="goalType">Goal Type:</label>
+                <input type="text" id="goalType" required>
+                <br>
+                <label for="goalTarget">Target (e.g., 500 minutes or 2000 calories):</label>
+                <input type="number" id="goalTarget" required>
+                <br>
+                <button type="submit">Set Goal</button>
+            </form>
+            <div class="progress-container">
+                <h2>Progress</h2>
+                <div id="progress"></div>
+            </div>
+        </div>
+
+        <div class="activity-list">
+            <h2>Your Activities</h2>
+            <ul id="activities"></ul>
+        </div>
+    </div>
+
+    <script src="task3.js"></script>
+</body>
+</html>
